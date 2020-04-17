@@ -1,0 +1,284 @@
+#topmenu{
+    height: 30px;  /*높이설정을 잘해야 아래내용이 안깨짐*/
+    width: 100%;  /*넓이설정을 잘해야 브라우저 좁아졌을때 안꺠짐*/
+    margin-top: 35px;
+    
+}/*100%로 설정하면 화면크기에 맞게 메뉴바조절*/
+#topmenu ul{
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+#topmenu ul li {
+    list-style: none; /*목록점사라짐*/
+    color: white; /*글씨색*/
+    background-color: thistle;
+    float: right; /*지금 이거덕에 가로로된거임*/
+    line-height: 30px; /*글씨가 가운데오기위해 한줄높이설정*/
+    vertical-align: middle; /*세로정렬을 가운데로 설정*/
+    text-align: center;
+    
+}
+#topmenu .menulink, .submenulink {
+    text-decoration: none;
+    color: white;
+    display: block;
+    width:200px; /*메뉴링크의 넓이*/
+    font-size: 15px;
+    font-weight: bold;
+    font-family: 
+}
+#topmenu .menulink:hover {
+    color:gold;
+    background-color: powderblue;
+}
+
+.menulink {
+    color: white;
+}
+
+.submenulink{  /*하위 메뉴의 스타일 설정*/
+    color: white;
+    background-color: thistle;
+    border: solid 1px thistle;
+    margin-top: -1px;
+}
+.longlink{
+    width:200px; /*이거도 같이수정*/
+
+}
+.submenu{
+    position: absolute;
+    height: 0px;
+    width: 200px; /*이거 수정할때는 메뉴링크넓이주석달린거랑 같게 되야 세로로 서브메뉴발생*/
+    overflow: hidden;
+    transition: height .2s;
+    webkit-transition: height .2s;
+}
+.topmenuli:hover .submenu{
+    height:310px;  /*탑메뉴li들의 높이하나가 30px으로 되있으니까 10개들어오려면 300이상*/
+    color: gold;
+}
+.submenulink:hover{
+    color: gold;
+    background-color: powderblue;
+}
+
+
+header{
+    height: 100px; 
+    background-color: rgb(255, 195, 65); 
+   /* border: 1px solid dodgerblue;*/
+    position: relative; /*얘가 fixed로되면 본문 div와 겹침*/
+    width:100%;
+    z-index: 9999;
+    top: 0;
+    left: 0;  
+    float: left;
+    text-decoration: none;
+    list-style: none;
+}
+h2{
+    color:white; 
+    line-height: 0px;
+    float:left;
+    text-decoration: none; /*왜작동안함 ㅆㅂ */
+    margin-left: 50px;
+    margin-top:15px;
+    
+    
+}
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+    text-decoration: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:url(back.jpg)
+    
+}
+
+#content{
+    clear: both;
+    border-top:1px; solid black;
+    color:black;
+    width: 100%;
+    height:100%;
+
+}
+.frame{
+    width:100%;
+    margin:0 auto;
+    border:1px solod black;
+    text-decoration: none;
+}
+main{
+    float:left;
+    width:800px;
+}
+.container{
+    clear: both;
+    overflow: hidden;
+    height:auto;   /*나중에 변경 꼭할것*/
+    float:left;
+    margin-left:50px ;
+    margin-top: 50px;
+    
+}
+.dayname{
+    margin-bottom: 50px;
+    background-color: rgb(178, 240,245, 0.6);
+    border-top: 0px solid;
+    border-left: 0px solid;
+    border-right: 0px solid;
+    border-bottom: 1px solid;
+    font-size: 20px;
+    border-radius: 50px;
+    padding-left: 20px;
+    width: 300px;
+    
+}
+.footer{
+    clear: both;
+    text-align: center;
+    border-top: 1px solid dodgerblue;
+    margin: 20px 20px 0;
+    font-size: 12px;
+}
+.superheader{
+    text-decoration: none;
+}
+
+/*텍스트박스 구간*/
+.txtbox00,
+.txtbox01, .txtbox02, .txtbox03, .txtbox04, .txtbox05, .txtbox06, .txtbox07, .txtbox08, .txtbox09, 
+.txtbox10, .txtbox11, .txtbox12, .txtbox13, .txtbox14, .txtbox15, .txtbox16, .txtbox17, .txtbox18, 
+.txtbox19, .txtbox20, .txtbox21, .txtbox22, .txtbox23, .txtbox24, .txtbox25, .txtbox26, .txtbox27,
+.txtbox28, .txtbox29, .txtbox30{
+    border-style: solid;
+    border-radius: 20px;
+    border-width: 4px;
+    padding: 20px;
+    word-break: break-all;
+    margin-bottom: 25px;
+    margin-right: 45px;
+    background-color: rgb(255, 250, 250, 0.5); /*투명도 지정해주려고 여기만 rgb씀*/
+    float: left;
+    width: 250px;
+}
+.txtbox00{
+    border-color: gold;
+}
+.txtbox01, .txtbox06, .txtbox11, .txtbox16, .txtbox21, .txtbox26{
+    border-color: lightgreen;
+}
+.txtbox02, .txtbox07, .txtbox12, .txtbox17, .txtbox22, .txtbox27{
+    border-color: lightblue;
+}
+.txtbox03, .txtbox08, .txtbox13, .txtbox18, .txtbox23, .txtbox28{
+    border-color: lightpink;
+}
+.txtbox04, .txtbox09, .txtbox14, .txtbox19, .txtbox24, .txtbox29{
+    border-color: paleturquoise;
+}
+.txtbox05, .txtbox10, .txtbox15, .txtbox20, .txtbox25, .txtbox30{
+    border-color: royalblue;
+}
+/*박스 호버 이벡트*/
+
+.txtbox00:hover span:nth-child(2){
+    display: none;
+}
+.txtbox01:hover span:nth-child(2){
+    display: none;
+}
+.txtbox02:hover span:nth-child(2){
+    display: none;
+}
+.txtbox03:hover span:nth-child(2){
+    display: none;
+}
+.txtbox04:hover span:nth-child(2){
+    display: none;
+}
+.txtbox05:hover span:nth-child(2){
+    display: none;
+}
+.txtbox06:hover span:nth-child(2){
+    display: none;
+}
+.txtbox07:hover span:nth-child(2){
+    display: none;
+}
+.txtbox08:hover span:nth-child(2){
+    display: none;
+}
+.txtbox09:hover span:nth-child(2){
+    display: none;
+}
+.txtbox10:hover span:nth-child(2){
+    display: none;
+}
+.txtbox11:hover span:nth-child(2){
+    display: none;
+}
+.txtbox12:hover span:nth-child(2){
+    display: none;
+}
+.txtbox13:hover span:nth-child(2){
+    display: none;
+}
+.txtbox14:hover span:nth-child(2){
+    display: none;
+}
+.txtbox15:hover span:nth-child(2){
+    display: none;
+}
+.txtbox16:hover span:nth-child(2){
+    display: none;
+}
+.txtbox17:hover span:nth-child(2){
+    display: none;
+}
+.txtbox18:hover span:nth-child(2){
+    display: none;
+}
+.txtbox19:hover span:nth-child(2){
+    display: none;
+}
+.txtbox20:hover span:nth-child(2){
+    display: none;
+}
+.txtbox21:hover span:nth-child(2){
+    display: none;
+}
+.txtbox22:hover span:nth-child(2){
+    display: none;
+}
+.txtbox23:hover span:nth-child(2){
+    display: none;
+}
+.txtbox24:hover span:nth-child(2){
+    display: none;
+}
+.txtbox25:hover span:nth-child(2){
+    display: none;
+}
+.txtbox26:hover span:nth-child(2){
+    display: none;
+}
+.txtbox27:hover span:nth-child(2){
+    display: none;
+}
+.txtbox28:hover span:nth-child(2){
+    display: none;
+}
+.txtbox29:hover span:nth-child(2){
+    display: none;
+}
+.txtbox30:hover span:nth-child(2){
+    display: none;
+}
